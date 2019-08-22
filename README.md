@@ -118,7 +118,19 @@ information on what to include when reporting a bug.
 
 ## Changelog
 
-User-visible changes since the last release.
+ - Disabled tests and examples by default when built as a CMake subdirectory
+ - Bugfix: The CMake config-file package used an absolute path and was not
+   relocatable (#1470)
+ - [Win32] Bugfix: `GLFW_INCLUDE_VULKAN` plus `VK_USE_PLATFORM_WIN32_KHR` caused
+   symbol redefinition (#1524)
+ - [Win32] Bugfix: The cursor position event was emitted before its cursor enter
+   event (#1490)
+ - [Win32] Bugfix: The window hint `GLFW_MAXIMIZED` did not move or resize the
+   window (#1499)
+ - [X11] Bugfix: The CMake files did not check for the XInput headers (#1480)
+ - [X11] Bugfix: Key names were not updated when the keyboard layout changed
+   (#1462,#1528)
+ - [NSGL] Removed enforcement of forward-compatible flag for core contexts
 
 
 ## Contact
@@ -189,6 +201,7 @@ skills.
  - Mário Freitas
  - GeO4d
  - Marcus Geelnard
+ - Charles Giessen
  - Stephen Gowen
  - Kovid Goyal
  - Eloi Marín Gratacós
@@ -200,6 +213,7 @@ skills.
  - Lucas Hinderberger
  - Paul Holden
  - Warren Hu
+ - Charles Huber
  - IntellectualKitty
  - Aaron Jacobs
  - Erik S. V. Jansson
@@ -217,8 +231,11 @@ skills.
  - Robin Leffmann
  - Glenn Lewis
  - Shane Liesegang
+ - Anders Lindqvist
+ - Leon Linhart
  - Eyal Lotem
  - Aaron Loucks
+ - Luflosi
  - Tristam MacDonald
  - Hans Mackowiak
  - Дмитри Малышев
@@ -231,6 +248,7 @@ skills.
  - Jonathan Mercier
  - Marcel Metz
  - Liam Middlebrook
+ - Ave Milia
  - Jonathan Miller
  - Kenneth Miller
  - Bruce Mitchener
@@ -258,6 +276,7 @@ skills.
  - Cyril Pichard
  - Keith Pitt
  - Stanislav Podgorskiy
+ - Konstantin Podsvirov
  - Nathan Poirier
  - Alexandre Pretyman
  - przemekmirek
@@ -309,6 +328,7 @@ skills.
  - Jay Weisskopf
  - Frank Wille
  - Ryogo Yoshimura
+ - Lukas Zanner
  - Andrey Zholos
  - Santi Zupancic
  - Jonas Ådahl
